@@ -1,0 +1,42 @@
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.status-badge--default {
+  font-size: 0.75rem;
+}
+
+.status-badge--large {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+}
+
+.status-badge--pending {
+  background: rgba(251, 191, 36, 0.2);
+  color: var(--color-warning);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  box-shadow: 0 2px 12px rgba(251, 191, 36, 0.1);
+}
+
+.status-badge--accepted {
+  background: rgba(52, 211, 153, 0.2);
+  color: var(--color-success);
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  box-shadow: 0 2px 12px rgba(52, 211, 153, 0.1);
+}
+
+.status-badge--rejected {
+  background: rgba(248, 113, 113, 0.2);
+  color: var(--color-error);
+  border: 1px solid rgba(248, 113, 113, 0.35);
+  box-shadow: 0 2px 12px rgba(248, 113, 113, 0.1);
+}
